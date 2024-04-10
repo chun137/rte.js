@@ -1,0 +1,20 @@
+{
+  "name": "rte.js",
+  "version": "1.0.0",
+  "description": "Fake project to test CI",
+  "main": "index.js",
+  "scripts": {
+    "build": "pwd",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chun137/rte.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chun137/rte.js/issues"
+  },
+  "homepage": "https://github.com/chun137/rte.js#readme"
+}
