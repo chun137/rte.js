@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "pwd",
-    "test": "npm run test"
+    "test": "cd wpt && ./wpt run chrome --log-wptreport ~/wptreport.json"
   },
   "repository": {
     "type": "git",
