@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "pwd",
-    "test": "npm run test"
+    "test": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome --log-wptreport process.env.REPORT_PATH"
   },
   "repository": {
     "type": "git",
