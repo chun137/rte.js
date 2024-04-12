@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf build && mkdir build && echo window.LocalVideoStream=false > build/rte.js",
-    "test": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome --log-wptreport ${REPORT_PATH}"
+    "wpt": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome ${TEST}",
+    "wpt-all": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome --log-wptreport ${REPORT_PATH}" 
   },
   "repository": {
     "type": "git",
