@@ -4,8 +4,8 @@
   "description": "Fake project to test CI",
   "main": "index.js",
   "scripts": {
-    "build": "pwd",
-    "test": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome --log-wptreport process.env.REPORT_PATH"
+    "build": "rm -rf build && mkdir build && echo window.LocalVideoStream=false > build/rte.js",
+    "test": "unset http_proxy && unset https_proxy && cd wpt && ./wpt run chrome --log-wptreport ${REPORT_PATH}"
   },
   "repository": {
     "type": "git",
